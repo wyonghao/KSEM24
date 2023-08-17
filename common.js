@@ -16,4 +16,17 @@ function loadCommonSections() {
   
   // Call the function when the document is loaded
   document.addEventListener('DOMContentLoaded', loadCommonSections);
+
+  function loadLogosSection() {
+    fetch('logo.html')
+      .then(response => response.text())
+      .then(html => {
+        document.querySelector('#logos').innerHTML = html;
+      });
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    loadCommonSections();  // Assuming you have this function from earlier
+    loadLogosSection();
+  });
   
