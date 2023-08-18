@@ -16,10 +16,10 @@ function loadCommonSections() {
       .then(html => {
         document.querySelector('#rightside').innerHTML = html;
       });
-    // Repeat for other sections like sidebar
-  }
   
-  // Call the function when the document is loaded
+    // Repeat for other sections if needed
+}
+
 function loadLogosSection() {
     fetch('logo.html')
       .then(response => response.text())
