@@ -1,3 +1,4 @@
+//YW, load common sections for all pages
 function loadCommonSections() {
     fetch('header.html')
       .then(response => response.text())
