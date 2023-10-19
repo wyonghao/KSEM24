@@ -1,6 +1,3 @@
-https://ksem-24-git-devsidebar-wyonghao.vercel.app/
-
-
 submission: April 5, 2024
 Author notification: Apr 25, 2023
 Camera-Ready: May 15, 2023
@@ -13,58 +10,13 @@ Registration: May 15, 2023
     <strong>Conference date</strong>: August 16-18th, 2024
 </p>
 
-serve locally 
-pythons -m http.server 8000 --bind 127.0.0.1
 
-JS for loading HTML into a div
+/// the old one is below
 
-function loadHTML(filename, elementId) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', filename, true);
-    xhr.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status === 200) {
-            document.getElementById(elementId).innerHTML = this.responseText;
-        }
-    };
-    xhr.send();
-}
-
-// Usage:
-window.onload = function() {
-    loadHTML('sidebar.html', 'sidebarContainer');
-    loadHTML('footer.html', 'footerContainer');
-};
-
-
-function loadCommonSections() {
-    fetch('header.html')
-      .then(response => response.text())
-      .then(html => {
-        document.querySelector('#header').innerHTML = html;
-      });
-  
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(html => {
-        document.querySelector('#footer').innerHTML = html;
-      });
-  
-    // Repeat for other sections like sidebar
-  }
-  
-  // Call the function when the document is loaded
-  document.addEventListener('DOMContentLoaded', loadCommonSections);
-  
-example of loading footer
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Other head content -->
-  <script src="common.js"></script>
-</head>
-<body>
-  <div id="header"></div>
-  <!-- Other body content -->
-  <div id="footer"></div>
-</body>
-</html>
+<p><strong>Paper submission</strong>: April 25, 2024 (Firm Deadline. Due to large amounts of
+    extension requests.)<br>
+    <strong>Author notification</strong>: May 15, 2024<br>
+    <strong>Camera-Ready</strong>: June 1, 2024<br>
+    <strong>Registration</strong>: June 1, 2024<br>
+    <strong>Conference date</strong>: August 16-18th, 2024
+</p>
